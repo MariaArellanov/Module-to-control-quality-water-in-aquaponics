@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquaponics Dashboard</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f7f6; display: flex; flex-direction: column; align-items: center; padding: 20px; }
+        .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; width: 100%; max-width: 1000px; }
+        .card { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; border-top: 5px solid #2ecc71; }
+        .card h3 { color: #7f8c8d; margin-bottom: 10px; text-transform: uppercase; font-size: 0.9rem; }
+        .value { font-size: 2.5rem; font-weight: bold; color: #2c3e50; }
+        .unit { font-size: 1rem; color: #95a5a6; }
+        .status { margin-top: 15px; font-size: 0.8rem; color: #bdc3c7; }
+        h1 { color: #2c3e50; margin-bottom: 30px; }
+    </style>
+</head>
+<body>
+
+    <h1>Aquaponics System Real-Time Data</h1>
+
+    <div class="container">
+        <!-- Ambient Temperature -->
+        <div class="card" style="border-top-color: #f39c12;">
+            <h3>Ambient Temperature</h3>
+            <div class="value" id="ambi-val">--</div>
+            <div class="unit">°C</div>
+            <div class="status">Source: LM35 Sensor</div>
+        </div>
+
+        <!-- Water Temperature -->
+        <div class="card" style="border-top-color: #3498db;">
+            <h3>Water Temperature</h3>
+            <div class="value" id="watr-val">--</div>
+            <div class="unit">°C</div>
+            <div class="status">Source: DS18B20 Sensor</div>
+        </div>
+
+        <!-- Water Flow -->
+        <div class="card" style="border-top-color: #2ecc71;">
+            <h3>Pump Flow Rate</h3>
+            <div class="value" id="pump-val">--</div>
+            <div class="unit">L/min</div>
+            <div class="status">Source: YF-S201 Sensor</div>
+        </div>
+    </div>
+
+    <script>
+        const BASE_URL = 'https://acuaponia.herokuapp.com';
+
+        async function updateDashboard() {
+            try {
+                // Fetch Water Temp
+                const resWater = await fetch(`${BASE_URL}/water`);
+                const dataWater = await resWater.json();
+                document.getElementById('watr-val').innerText = dataWater.temp || '--';
+
+                // Fetch Ambient Temp
+                const resAmb = await fetch(`${BASE_URL}/amb`);
+                const dataAmb = await resAmb.json();
+                document.getElementById('ambi-val').innerText = dataAmb.temp || '--';
+
+                // Fetch Flow
+                const resFlow = await fetch(`${BASE_URL}/flow`);
+                const dataFlow = await resFlow.json();
+                document.getElementById('pump-val').innerText = dataFlow.flow || '--';
+
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        }
+
+        // Update every 5 seconds
+        setInterval(updateDashboard, 5000);
+        updateDashboard(); // Initial call
+    </script>
+</body>
+</html>
