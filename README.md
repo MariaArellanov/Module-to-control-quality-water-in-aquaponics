@@ -42,7 +42,7 @@ The project was executed in three strategic phases:
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 ├── arduino/           # .ino firmware for sensor acquisition
