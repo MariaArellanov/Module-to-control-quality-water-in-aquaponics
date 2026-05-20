@@ -3,7 +3,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
 ## International Academic Collaboration
-This project was developed as a collaborative international effort between the **Universidad Politécnica de Juventino Rosas (UPJR)**, Mexico, and the **Faculty of Agronomic Sciences of the Universidad de Chile**. 
+This research project was developed as a collaborative international effort between the **Universidad Politécnica de Juventino Rosas (UPJR)**, Mexico, and the **Faculty of Agronomic Sciences of the Universidad de Chile**. 
 
 The module was created in **2018** within the framework of the **SICES (Second Meeting of Innovation and Creativity for Internationalization at Home)** call, a program dedicated to fostering global academic cooperation and innovation between Mexico and Chile.
 
