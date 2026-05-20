@@ -41,18 +41,6 @@ The project was executed in three strategic phases:
 *   **Cloud Hosting:** Heroku / Local Server.
 
 
-### Citation
-If you use this software in your research, please cite it as follows:
-```bibtex
-@software{Arellano_Module_Control_Water_Quality_Aquaponics},
-  author = {Arellano, Maria, et al.},
-  title = {Module to Control Water Quality in Aquaponics},
-  year = {2018},
-  publisher = {Zenodo}
-}
-
----
-
 ## Repository Structure
 
 ```text
@@ -62,5 +50,14 @@ If you use this software in your research, please cite it as follows:
 ├── dashboard/         # HTML/JS files for the monitoring interface
 └── README.md          # Project documentation
 
+---
 
-
+## Citation
+If you use this software in your research, please cite it as follows:
+```bibtex
+@software{Arellano_Module_Control_Water_Quality_Aquaponics},
+  author = {Arellano, Maria, et al.},
+  title = {Module to Control Water Quality in Aquaponics},
+  year = {2018},
+  publisher = {Zenodo}
+}
