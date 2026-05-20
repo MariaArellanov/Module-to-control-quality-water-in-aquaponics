@@ -39,7 +39,8 @@ The project was executed in three strategic phases:
 *   **Backend:** Python 3 + Flask (Cloud API).
 *   **Frontend:** HTML5, CSS3, and JavaScript (Real-time Dashboard).
 *   **Cloud Hosting:** Heroku / Local Server.
-
+  
+---
 
 ## Repository Structure
 
@@ -49,9 +50,8 @@ The project was executed in three strategic phases:
 ├── backend/           # Flask API logic and requirements.txt
 ├── dashboard/         # HTML/JS files for the monitoring interface
 └── README.md          # Project documentation
-
----
-
+```
+  
 ## Citation
 If you use this software in your research, please cite it as follows:
 ```bibtex
