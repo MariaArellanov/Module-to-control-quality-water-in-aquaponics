@@ -1,7 +1,7 @@
 # Module to Control Water Quality in Aquaponics
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Zenodo downloads](https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=downloads&query=%24.stats.downloads&url=https%3A%2F%2Fzenodo.org%2Fapi%2Frecords%2F20162094&logo=zenodo&color=1071b8&labelColor=555555)](https://zenodo.org/records/20162094)
+[![Zenodo downloads](https://img.shields.io/badge/dynamic/json?style=flat&label=downloads&query=%24.stats.downloads&url=https%3A%2F%2Fzenodo.org%2Fapi%2Frecords%2F20162094&logo=zenodo&color=1071b8)](https://zenodo.org/records/20162094)
 
 
 ## International Academic Collaboration
