@@ -1,7 +1,7 @@
 # Module to Control Water Quality in Aquaponics
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2591410.svg)](https://doi.org/10.5281/zenodo.2591410) [![Zenodo downloads](https://img.shields.io/zenodo/downloads/2591410?style=for-the-badge&logo=zenodo&color=1071b8)](https://zenodo.org/record/2591410)
+[![Zenodo downloads](https://img.shields.io/badge/dynamic/json?style=for-the-badge&maxAge=3600&label=downloads&query=%24.stats.downloads&url=https%3A%2F%2Fzenodo.org%2Fapi%2Frecords%2F2591410&logo=zenodo&color=1071b8)](https://zenodo.org/record/2591410)
 
 ## International Academic Collaboration
 This research project was developed as a collaborative international effort between the **Universidad Politécnica de Juventino Rosas (UPJR)**, Mexico, and the **Faculty of Agronomic Sciences of the Universidad de Chile**. 
